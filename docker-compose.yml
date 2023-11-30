@@ -1,0 +1,8 @@
+services:
+  test:
+    build: .
+    volumes:
+      - ./config:/config
+    command: run
+    ports:
+      - "9999:9999"
